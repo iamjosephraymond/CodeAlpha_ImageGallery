@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">SNAPGALLERY</div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+        <button id="darkmode-btn">🌙</button>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <h1>Captured Moments</h1>
+      <p>
+        Explore a curated collection of stunning photographs from around the
+        world.
+      </p>
+    </section>
+
+    <section class="filters" id="categories">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="nature">Nature</button>
+      <button class="filter" data-filter="architecture">Architecture</button>
+      <button class="filter" data-filter="travel">Travel</button>
+      <button class="filter" data-filter="food">Food</button>
+    </section>
+
+    <section class="searchbox">
+      <input type="text" id="searchInput" placeholder="Search images..." />
+    </section>
+
+    <section id="gallery" class="gallery"></section>
+
+    <div class="lightbox" id="lightbox">
+      <span class="close">×</span>
+      <button class="prev">❮</button>
+      <img id="lightboxImage"  alt="${img.title}"/>
+      <button class="next">❯</button>
+      <p id="caption"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

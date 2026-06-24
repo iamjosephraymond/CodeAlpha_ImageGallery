@@ -1,0 +1,42 @@
+@media(max-width:992px){
+.hero h1{
+font-size:2.4rem;
+}
+.nav-links{
+gap:18px;
+}
+.gallery{
+grid-template-columns:repeat(2,1fr);
+}
+}
+@media(max-width:768px){
+.navbar{
+flex-direction:column;
+gap:20px;
+}
+.hero h1{
+font-size:2rem;
+}
+.gallery{
+grid-template-columns:1fr;
+}
+.prev,
+.next{
+width:45px;
+height:45px;
+}
+}
+@media(max-width:480px){
+.hero{
+margin:35px auto;
+}
+.hero h1{
+font-size:1.7rem;
+}
+.search-box input{
+padding:14px;
+}
+.filter{
+padding:10px 18px;
+}
+}
