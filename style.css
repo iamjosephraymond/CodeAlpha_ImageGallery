@@ -30,13 +30,12 @@ body {
   font-family: "Poppins", sans-serif;
   background: var(--bg);
   color: var(--text);
-  transition: 0.4s;
+  transition:background .4s,color .4s;
 }
 header {
   position: sticky;
   top: 0;
   z-index: 999;
-  backdrop-filter: blur(15px);
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -147,7 +146,7 @@ li {
   border: 1px solid var(--border);
   outline: none;
   font-size: 16px;
-  box-shadow: 2px 2px rgb(180, 165, 165);
+  box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
 .gallery {
   width: min(1200px, 92%);
