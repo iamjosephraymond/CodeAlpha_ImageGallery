@@ -93,6 +93,7 @@ li {
   width: min(1200px, 92%);
   padding: 80px 0;
   text-align: center;
+  margin: auto;
 }
 .hero h1 {
   font-size: 3rem;
