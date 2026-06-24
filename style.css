@@ -14,7 +14,7 @@
 .dark {
   --bg: #0f172a;
   --card: #1e293b;
-  --text: #ffffff;
+  --text: #e8dddd;
   --text-light: #cbd5e1;
   --border: #334155;
 }
@@ -129,6 +129,17 @@ li {
 .filter.active {
   background: var(--primary);
   color: white;
+}
+.dark .filter {
+  background: #334155;
+  color: #ffffff;
+  border: 1px solid #475569;
+}
+
+.dark .filter:hover,
+.dark .filter.active {
+  background: var(--primary);
+  color: #ffffff;
 }
 .searchbox {
   width: min(600px, 90%);
